@@ -14,7 +14,7 @@
  * each message to the first proxied object that responds to it. This does not send
  * every message to each target, with some exceptions for reflection functionality
  * within the \c NSObject protocol. The result is dynamism very much like multiple
- * inheritance.
+ * inheritance
  * 
  * @note To avoid warnings about static typing, refer to instances of this class as
  * \c id or using one of the classes being proxied.

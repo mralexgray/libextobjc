@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B06BC151761F0F5003A9C7E /* EXTSynthesize.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FBB1D815F68657002281B9 /* EXTSynthesize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B3D6F1E17531AB400F9676B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3D6F1D17531AB400F9676B /* Foundation.framework */; };
 		7B3D6F2117531AB400F9676B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3D6F2017531AB400F9676B /* main.m */; };
 		7B3D6F2517531AB400F9676B /* AlexTests.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B3D6F2417531AB400F9676B /* AlexTests.1 */; };
@@ -21,8 +22,6 @@
 		D005F04415950509007A8A1C /* EXTADT.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F01815950509007A8A1C /* EXTADT.h */; };
 		D005F04515950509007A8A1C /* EXTAspect.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F01915950509007A8A1C /* EXTAspect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D005F04615950509007A8A1C /* EXTAspect.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F01915950509007A8A1C /* EXTAspect.h */; };
-		D005F04715950509007A8A1C /* EXTAspect.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F01A15950509007A8A1C /* EXTAspect.m */; };
-		D005F04815950509007A8A1C /* EXTAspect.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F01A15950509007A8A1C /* EXTAspect.m */; };
 		D005F04915950509007A8A1C /* EXTBlockMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F01B15950509007A8A1C /* EXTBlockMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D005F04A15950509007A8A1C /* EXTBlockMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F01B15950509007A8A1C /* EXTBlockMethod.h */; };
 		D005F04B15950509007A8A1C /* EXTBlockMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F01C15950509007A8A1C /* EXTBlockMethod.m */; };
@@ -664,8 +663,8 @@
 				D088C7BD159121A300C70CE2 /* EXTKeyPathCodingTest.m */,
 				D0737D9214CB9438005BF183 /* EXTMaybeTest.h */,
 				D0737D9314CB9438005BF183 /* EXTMaybeTest.m */,
-				D0FE94021596668400F3AE1C /* EXTMultimethodTest.h */,
 				D0FE94031596668400F3AE1C /* EXTMultimethodTest.m */,
+				D0FE94021596668400F3AE1C /* EXTMultimethodTest.h */,
 				D002DAF613656CDF005348A5 /* EXTNilTest.h */,
 				D002DAF713656CDF005348A5 /* EXTNilTest.m */,
 				876EE9D4170B13C000AB73BB /* EXTObjectiveCppCompileTest.h */,
@@ -772,6 +771,7 @@
 				D0E6A0EE159BB43B00FB92FC /* EXTAnnotation.h in Headers */,
 				D0D1F92E15A396CC002E2387 /* EXTPassthrough.h in Headers */,
 				D005F07115950509007A8A1C /* extobjc.h in Headers */,
+				7B06BC151761F0F5003A9C7E /* EXTSynthesize.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -876,7 +876,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "extobjc" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -986,7 +986,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D005F04815950509007A8A1C /* EXTAspect.m in Sources */,
 				D005F04C15950509007A8A1C /* EXTBlockMethod.m in Sources */,
 				D005F05015950509007A8A1C /* EXTBlockTarget.m in Sources */,
 				D005F05415950509007A8A1C /* EXTConcreteProtocol.m in Sources */,
@@ -1076,15 +1075,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D005F04715950509007A8A1C /* EXTAspect.m in Sources */,
 				D005F04B15950509007A8A1C /* EXTBlockMethod.m in Sources */,
 				D005F04F15950509007A8A1C /* EXTBlockTarget.m in Sources */,
 				D005F05315950509007A8A1C /* EXTConcreteProtocol.m in Sources */,
 				D005F05915950509007A8A1C /* EXTDispatchObject.m in Sources */,
 				D005F05D15950509007A8A1C /* EXTFinalMethod.m in Sources */,
 				D005F06315950509007A8A1C /* EXTMaybe.m in Sources */,
-				D005F06915950509007A8A1C /* EXTMultiObject.m in Sources */,
 				D005F06D15950509007A8A1C /* EXTNil.m in Sources */,
+				D005F06915950509007A8A1C /* EXTMultiObject.m in Sources */,
 				D005F07515950509007A8A1C /* EXTPrivateMethod.m in Sources */,
 				D005F07915950509007A8A1C /* EXTProtocolCategory.m in Sources */,
 				D005F07D15950509007A8A1C /* EXTRuntimeExtensions.m in Sources */,
@@ -1135,11 +1133,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C5E146F99B900D680C9 /* Mac-StaticLibrary.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
-				HEADER_SEARCH_PATHS = libffi/osx/include;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libffi/osx/include\"";
 				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = extobjc_OSX;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1147,11 +1150,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C5E146F99B900D680C9 /* Mac-StaticLibrary.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
-				HEADER_SEARCH_PATHS = libffi/osx/include;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libffi/osx/include\"";
 				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = extobjc_OSX;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -1159,15 +1167,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C4F146F99B900D680C9 /* Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_EMPTY_BODY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				TEST_AFTER_BUILD = YES;
 				WARNING_CFLAGS = "-fmacro-backtrace-limit=0";
 			};
@@ -1177,10 +1187,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C51146F99B900D680C9 /* Release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_EMPTY_BODY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -1215,6 +1226,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -1243,6 +1255,7 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AlexTests/AlexTests-Prefix.pch";
+				GCC_UNROLL_LOOPS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -1256,7 +1269,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C58146F99B900D680C9 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
 				HEADER_SEARCH_PATHS = "libffi/ios/include/**";
 				PRODUCT_NAME = extobjc_iOS;
@@ -1267,7 +1279,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C58146F99B900D680C9 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
 				HEADER_SEARCH_PATHS = "libffi/ios/include/**";
 				PRODUCT_NAME = extobjc_iOS;
@@ -1278,6 +1289,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C5A146F99B900D680C9 /* Mac-Application.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					EXT_UNIT_TEST,
@@ -1305,6 +1317,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C5A146F99B900D680C9 /* Mac-Application.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					EXT_UNIT_TEST,
@@ -1332,7 +1345,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C56146F99B900D680C9 /* iOS-Application.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -1365,7 +1377,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C56146F99B900D680C9 /* iOS-Application.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
