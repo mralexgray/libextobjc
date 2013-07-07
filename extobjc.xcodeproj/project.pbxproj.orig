@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7B06BC151761F0F5003A9C7E /* EXTSynthesize.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FBB1D815F68657002281B9 /* EXTSynthesize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B2A59FD17779B9300D5FE78 /* extobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F02F15950509007A8A1C /* extobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B3D6F1E17531AB400F9676B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3D6F1D17531AB400F9676B /* Foundation.framework */; };
 		7B3D6F2117531AB400F9676B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3D6F2017531AB400F9676B /* main.m */; };
 		7B3D6F2517531AB400F9676B /* AlexTests.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B3D6F2417531AB400F9676B /* AlexTests.1 */; };
@@ -23,7 +22,6 @@
 		D005F04415950509007A8A1C /* EXTADT.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F01815950509007A8A1C /* EXTADT.h */; };
 		D005F04515950509007A8A1C /* EXTAspect.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F01915950509007A8A1C /* EXTAspect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D005F04615950509007A8A1C /* EXTAspect.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F01915950509007A8A1C /* EXTAspect.h */; };
-		D005F04815950509007A8A1C /* EXTAspect.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F01A15950509007A8A1C /* EXTAspect.m */; };
 		D005F04915950509007A8A1C /* EXTBlockMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F01B15950509007A8A1C /* EXTBlockMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D005F04A15950509007A8A1C /* EXTBlockMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F01B15950509007A8A1C /* EXTBlockMethod.h */; };
 		D005F04B15950509007A8A1C /* EXTBlockMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F01C15950509007A8A1C /* EXTBlockMethod.m */; };
@@ -62,7 +60,9 @@
 		D005F06C15950509007A8A1C /* EXTNil.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F02C15950509007A8A1C /* EXTNil.h */; };
 		D005F06D15950509007A8A1C /* EXTNil.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F02D15950509007A8A1C /* EXTNil.m */; };
 		D005F06E15950509007A8A1C /* EXTNil.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F02D15950509007A8A1C /* EXTNil.m */; };
+		D005F06F15950509007A8A1C /* extobjc_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D005F02E15950509007A8A1C /* extobjc_Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		D005F07015950509007A8A1C /* extobjc_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D005F02E15950509007A8A1C /* extobjc_Prefix.pch */; };
+		D005F07115950509007A8A1C /* extobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F02F15950509007A8A1C /* extobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D005F07215950509007A8A1C /* extobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F02F15950509007A8A1C /* extobjc.h */; };
 		D005F07315950509007A8A1C /* EXTPrivateMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F03015950509007A8A1C /* EXTPrivateMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D005F07415950509007A8A1C /* EXTPrivateMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F03015950509007A8A1C /* EXTPrivateMethod.h */; };
@@ -663,8 +663,8 @@
 				D088C7BD159121A300C70CE2 /* EXTKeyPathCodingTest.m */,
 				D0737D9214CB9438005BF183 /* EXTMaybeTest.h */,
 				D0737D9314CB9438005BF183 /* EXTMaybeTest.m */,
-				D0FE94021596668400F3AE1C /* EXTMultimethodTest.h */,
 				D0FE94031596668400F3AE1C /* EXTMultimethodTest.m */,
+				D0FE94021596668400F3AE1C /* EXTMultimethodTest.h */,
 				D002DAF613656CDF005348A5 /* EXTNilTest.h */,
 				D002DAF713656CDF005348A5 /* EXTNilTest.m */,
 				876EE9D4170B13C000AB73BB /* EXTObjectiveCppCompileTest.h */,
@@ -742,8 +742,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D005F04315950509007A8A1C /* EXTADT.h in Headers */,
-				D005F04915950509007A8A1C /* EXTBlockMethod.h in Headers */,
 				D005F04515950509007A8A1C /* EXTAspect.h in Headers */,
+				D005F04915950509007A8A1C /* EXTBlockMethod.h in Headers */,
 				D005F04D15950509007A8A1C /* EXTBlockTarget.h in Headers */,
 				D005F05115950509007A8A1C /* EXTConcreteProtocol.h in Headers */,
 				D005F05515950509007A8A1C /* EXTCoroutine.h in Headers */,
@@ -754,6 +754,7 @@
 				D005F06515950509007A8A1C /* EXTMixin.h in Headers */,
 				D005F06715950509007A8A1C /* EXTMultiObject.h in Headers */,
 				D005F06B15950509007A8A1C /* EXTNil.h in Headers */,
+				D005F06F15950509007A8A1C /* extobjc_Prefix.pch in Headers */,
 				D005F07315950509007A8A1C /* EXTPrivateMethod.h in Headers */,
 				D005F07715950509007A8A1C /* EXTProtocolCategory.h in Headers */,
 				D005F07B15950509007A8A1C /* EXTRuntimeExtensions.h in Headers */,
@@ -769,7 +770,7 @@
 				D09FB2F6159A41C400A5F6A4 /* EXTSelectorChecking.h in Headers */,
 				D0E6A0EE159BB43B00FB92FC /* EXTAnnotation.h in Headers */,
 				D0D1F92E15A396CC002E2387 /* EXTPassthrough.h in Headers */,
-				7B2A59FD17779B9300D5FE78 /* extobjc.h in Headers */,
+				D005F07115950509007A8A1C /* extobjc.h in Headers */,
 				7B06BC151761F0F5003A9C7E /* EXTSynthesize.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -985,7 +986,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D005F04815950509007A8A1C /* EXTAspect.m in Sources */,
 				D005F04C15950509007A8A1C /* EXTBlockMethod.m in Sources */,
 				D005F05015950509007A8A1C /* EXTBlockTarget.m in Sources */,
 				D005F05415950509007A8A1C /* EXTConcreteProtocol.m in Sources */,
@@ -1081,8 +1081,8 @@
 				D005F05915950509007A8A1C /* EXTDispatchObject.m in Sources */,
 				D005F05D15950509007A8A1C /* EXTFinalMethod.m in Sources */,
 				D005F06315950509007A8A1C /* EXTMaybe.m in Sources */,
-				D005F06915950509007A8A1C /* EXTMultiObject.m in Sources */,
 				D005F06D15950509007A8A1C /* EXTNil.m in Sources */,
+				D005F06915950509007A8A1C /* EXTMultiObject.m in Sources */,
 				D005F07515950509007A8A1C /* EXTPrivateMethod.m in Sources */,
 				D005F07915950509007A8A1C /* EXTProtocolCategory.m in Sources */,
 				D005F07D15950509007A8A1C /* EXTRuntimeExtensions.m in Sources */,
@@ -1171,7 +1171,11 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+<<<<<<< HEAD
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+=======
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
+>>>>>>> upstream/master
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -1191,7 +1195,11 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+<<<<<<< HEAD
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+=======
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
+>>>>>>> upstream/master
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -1269,7 +1277,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C58146F99B900D680C9 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
 				HEADER_SEARCH_PATHS = "libffi/ios/include/**";
 				PRODUCT_NAME = extobjc_iOS;
@@ -1280,7 +1287,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C58146F99B900D680C9 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
 				HEADER_SEARCH_PATHS = "libffi/ios/include/**";
 				PRODUCT_NAME = extobjc_iOS;
@@ -1347,7 +1353,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C56146F99B900D680C9 /* iOS-Application.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -1380,7 +1385,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C56146F99B900D680C9 /* iOS-Application.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
