@@ -13,6 +13,7 @@
 		7B3D6F2117531AB400F9676B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3D6F2017531AB400F9676B /* main.m */; };
 		7B3D6F2517531AB400F9676B /* AlexTests.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B3D6F2417531AB400F9676B /* AlexTests.1 */; };
 		7B3D6F2B17531ACA00F9676B /* libextobjc_OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libextobjc_OSX.a */; };
+		7BC95FC117D646DA00E64FCB /* EXTAspect.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F01A15950509007A8A1C /* EXTAspect.m */; };
 		876EE9D6170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 876EE9D5170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm */; };
 		876EE9D7170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 876EE9D5170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm */; };
 		D002DAF813656CDF005348A5 /* EXTNilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D002DAF713656CDF005348A5 /* EXTNilTest.m */; };
@@ -330,7 +331,7 @@
 		D09FB2FC159A459700A5F6A4 /* EXTSelectorChecking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTSelectorChecking.m; sourceTree = "<group>"; };
 		D0A8B029128A4261004AACE0 /* libextobjc_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libextobjc_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A8B187128A4303004AACE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D0A8B2DC128A495D004AACE0 /* Logic Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Logic Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A8B2DC128A495D004AACE0 /* Logic Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Logic Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A8B2DD128A495D004AACE0 /* OSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSX-Info.plist"; sourceTree = "<group>"; };
 		D0A8B30C128A4B56004AACE0 /* EXTSwizzleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTSwizzleTest.h; sourceTree = "<group>"; };
 		D0A8B30D128A4B56004AACE0 /* EXTSwizzleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTSwizzleTest.m; sourceTree = "<group>"; };
@@ -420,7 +421,7 @@
 			children = (
 				D2AAC07E0554694100DB518D /* libextobjc_OSX.a */,
 				D0A8B029128A4261004AACE0 /* libextobjc_iOS.a */,
-				D0A8B2DC128A495D004AACE0 /* Logic Tests.octest */,
+				D0A8B2DC128A495D004AACE0 /* Logic Tests.xctest */,
 				D0CFB60F128A8EEE006DC377 /* iOS Tests.octest */,
 				7B3D6F1C17531AB400F9676B /* AlexTests */,
 			);
@@ -829,8 +830,8 @@
 			);
 			name = "OS X Tests";
 			productName = "Logic Tests";
-			productReference = D0A8B2DC128A495D004AACE0 /* Logic Tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = D0A8B2DC128A495D004AACE0 /* Logic Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D0CFB60E128A8EEE006DC377 /* iOS Tests */ = {
 			isa = PBXNativeTarget;
@@ -954,7 +955,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "# Run the unit tests in this test bundle.\n#\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
 		D0CFB60D128A8EEE006DC377 /* Run Script (libextobjc tests) */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1075,6 +1076,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC95FC117D646DA00E64FCB /* EXTAspect.m in Sources */,
 				D005F04B15950509007A8A1C /* EXTBlockMethod.m in Sources */,
 				D005F04F15950509007A8A1C /* EXTBlockTarget.m in Sources */,
 				D005F05315950509007A8A1C /* EXTConcreteProtocol.m in Sources */,
@@ -1138,7 +1140,6 @@
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
 				GCC_UNROLL_LOOPS = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libffi/osx/include\"";
-				INSTALL_PATH = /usr/local/lib;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = extobjc_OSX;
 				SDKROOT = macosx;
@@ -1155,7 +1156,6 @@
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
 				GCC_UNROLL_LOOPS = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libffi/osx/include\"";
-				INSTALL_PATH = /usr/local/lib;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = extobjc_OSX;
 				SDKROOT = macosx;
@@ -1291,27 +1291,30 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C5A146F99B900D680C9 /* Mac-Application.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					EXT_UNIT_TEST,
 					NDEBUG,
 				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_WARN_PEDANTIC = NO;
-				HEADER_SEARCH_PATHS = libffi/osx/include;
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/usr/local/include",
+					libffi/osx/include,
+				);
 				INFOPLIST_FILE = "Tests/OSX-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
 					Foundation,
-					"-framework",
-					SenTestingKit,
+					"-lffi",
 				);
 				PRODUCT_NAME = "Logic Tests";
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -1319,27 +1322,30 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C5A146F99B900D680C9 /* Mac-Application.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					EXT_UNIT_TEST,
 					NDEBUG,
 				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_WARN_PEDANTIC = NO;
-				HEADER_SEARCH_PATHS = libffi/osx/include;
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/usr/local/include",
+					libffi/osx/include,
+				);
 				INFOPLIST_FILE = "Tests/OSX-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
 					Foundation,
-					"-framework",
-					SenTestingKit,
+					"-lffi",
 				);
 				PRODUCT_NAME = "Logic Tests";
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

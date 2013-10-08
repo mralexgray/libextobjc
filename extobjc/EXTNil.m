@@ -73,12 +73,12 @@ static id singleton = nil;
     return !obj || obj == self || [obj isEqual:[NSNull null]];
 }
 
-- (BOOL)isKindOfClass:(Class)class {
-    return [class isEqual:[EXTNil class]] || [class isEqual:[NSNull class]];
+- (BOOL)isKindOfClass:(Class)klass {
+    return [klass isEqual:[EXTNil class]] || [klass isEqual:[NSNull class]];
 }
 
-- (BOOL)isMemberOfClass:(Class)class {
-    return [class isEqual:[EXTNil class]] || [class isEqual:[NSNull class]];
+- (BOOL)isMemberOfClass:(Class)klass {
+    return [klass isEqual:[EXTNil class]] || [klass isEqual:[NSNull class]];
 }
 
 - (BOOL)isProxy {

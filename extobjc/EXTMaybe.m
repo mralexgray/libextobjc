@@ -86,7 +86,7 @@
 
 #pragma mark NSObject protocol
 
-- (Class)class {
+- (Class)klass {
     if (m_error)
         return [m_error class];
     else
@@ -107,14 +107,14 @@
 
 - (BOOL)isEqual:(id)obj {
     return [m_error isEqual:obj] || [[EXTNil null] isEqual:obj];
+}	
+
+- (BOOL)isKindOfClass:(Class)klass {
+    return [m_error isKindOfClass:klass] || [[EXTNil null] isKindOfClass:klass];
 }
 
-- (BOOL)isKindOfClass:(Class)class {
-    return [m_error isKindOfClass:class] || [[EXTNil null] isKindOfClass:class];
-}
-
-- (BOOL)isMemberOfClass:(Class)class {
-    return [m_error isMemberOfClass:class] || [[EXTNil null] isMemberOfClass:class];
+- (BOOL)isMemberOfClass:(Class)klass {
+    return [m_error isMemberOfClass:klass] || [[EXTNil null] isMemberOfClass:klass];
 }
 
 - (Class)superclass {

@@ -63,13 +63,13 @@
 
 - (void)testAspects {
     AspectTestClass *obj = [[AspectTestClass alloc] init];
-    STAssertNotNil(obj, @"");
+    XCTAssertNotNil(obj, @"");
 
     obj.name = @"MyObject";
     [obj testMethod:42];
 
-    STAssertTrue([obj testOtherMethod], @"");
-    STAssertEqualsWithAccuracy([AspectTestClass testClassMethodWithString:@"foobar" length:6], 3.14, 0.01, @"");
+    XCTAssertTrue([obj testOtherMethod], @"");
+    XCTAssertEqualWithAccuracy([AspectTestClass testClassMethodWithString:@"foobar" length:6], 3.14, 0.01, @"");
 }
 
 @end
