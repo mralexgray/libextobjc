@@ -7,11 +7,11 @@
 //  Released under the MIT license.
 //
 
-#import <XCTest/XCTest.h>
+#import <SenTestingKit/SenTestingKit.h>
 #import <Foundation/Foundation.h>
 #import "EXTScope.h"
 
-@interface EXTScopeTest : XCTestCase {
+@interface EXTScopeTest : SenTestCase {
 @private
     
 }
