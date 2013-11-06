@@ -84,17 +84,17 @@
 
 - (void)testAspects {
     AspectTestClass *obj = [[AspectTestClass alloc] init];
-    STAssertNotNil(obj, @"");
+    XCTAssertNotNil(obj, @"");
 
-    STAssertNil(obj.name, @"");
+    XCTAssertNil(obj.name, @"");
     obj.name = @"MyObject";
-    STAssertEqualObjects([obj name], @"MyObject", @"");
+    XCTAssertEqualObjects([obj name], @"MyObject", @"");
     [obj testMethod:42];
 
-    STAssertEquals(obj->m_getterAdviceCallCount, 2, @"");
-    STAssertEquals(obj->m_setterAdviceCallCount, 1, @"");
-    STAssertTrue([obj testOtherMethod], @"");
-    STAssertEqualsWithAccuracy([AspectTestClass testClassMethodWithString:@"foobar" length:6], 3.14, 0.01, @"");
+    XCTAssertEqual(obj->m_getterAdviceCallCount, 2, @"");
+    XCTAssertEqual(obj->m_setterAdviceCallCount, 1, @"");
+    XCTAssertTrue([obj testOtherMethod], @"");
+    XCTAssertEqualWithAccuracy([AspectTestClass testClassMethodWithString:@"foobar" length:6], 3.14, 0.01, @"");
 }
 
 @end

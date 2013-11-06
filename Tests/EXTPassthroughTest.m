@@ -33,22 +33,22 @@
 
 - (void)testPassthroughMethods {
     OuterClass *outer = [[OuterClass alloc] init];
-    STAssertNotNil(outer, @"");
+    XCTAssertNotNil(outer, @"");
 
     [outer renamedMethod];
-    STAssertEquals([outer methodWithString:@"foo"], 3, @"");
-    STAssertEquals([outer methodWithString:@"foobar" number:@5], 11, @"");
+    XCTAssertEqual([outer methodWithString:@"foo"], 3, @"");
+    XCTAssertEqual([outer methodWithString:@"foobar" number:@5], 11, @"");
 }
 
 - (void)testPassthroughProperty {
     OuterClass *outer = [[OuterClass alloc] init];
-    STAssertNotNil(outer, @"");
-    STAssertFalse(outer.enabled, @"");
-    STAssertFalse(outer.inner.enabled, @"");
+    XCTAssertNotNil(outer, @"");
+    XCTAssertFalse(outer.enabled, @"");
+    XCTAssertFalse(outer.inner.enabled, @"");
 
     outer.enabled = YES;
-    STAssertTrue(outer.enabled, @"");
-    STAssertTrue(outer.inner.enabled, @"");
+    XCTAssertTrue(outer.enabled, @"");
+    XCTAssertTrue(outer.inner.enabled, @"");
 }
 
 @end
