@@ -9,7 +9,10 @@
 
 #import "EXTAnnotation.h"
 #import "EXTScope.h"
-#import <objc/runtime.h>
+//@import ObjectiveC;
+#import <Foundation/NSObjCRuntime.h>
+
+//#import <objc/runtime.h>
 
 static void * const ext_classAnnotationKey = "ext_classAnnotation";
 

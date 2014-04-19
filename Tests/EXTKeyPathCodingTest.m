@@ -10,12 +10,7 @@
 
 // used to test refactoring also updating @keypath() uses
 @interface MyClass : NSObject
-
-+ (BOOL)classProperty;
-
 @property (nonatomic, assign) NSUInteger someUniqueProperty;
-@property (nonatomic, copy) NSArray *collection;
-
 @end
 
 @implementation EXTKeyPathCodingTest
@@ -47,7 +42,7 @@
     XCTAssertEqualObjects(path, @"description", @"");
 }
 
-- (void)testMyClassInstanceKeyPath {
+- (void)testMyClassKeyPath {
     NSString *path = @keypath(MyClass.new, someUniqueProperty);
     XCTAssertEqualObjects(path, @"someUniqueProperty", @"");
 
@@ -57,29 +52,8 @@
     XCTAssertEqualObjects(path, @"someUniqueProperty", @"");
 }
 
-- (void)testMyClassClassKeyPath {
-    NSString *path = @keypath(MyClass, classProperty);
-    XCTAssertEqualObjects(path, @"classProperty", @"");
-}
-
-- (void)testCollectionInstanceKeyPath {
-	MyClass *obj = [[MyClass alloc] init];
-	NSString *path = @collectionKeypath(obj.collection, MyClass.new, someUniqueProperty);
-	XCTAssertEqualObjects(path, @"collection.someUniqueProperty", @"");
-}
-
-- (void)testCollectionClassKeyPath {
-	NSString *path = @collectionKeypath(MyClass.new, collection, MyClass.new, someUniqueProperty);
-	XCTAssertEqualObjects(path, @"collection.someUniqueProperty", @"");
-}
-
 @end
 
 @implementation MyClass
 @synthesize someUniqueProperty;
-
-+ (BOOL)classProperty {
-	return NO;
-}
-
 @end

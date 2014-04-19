@@ -7,10 +7,10 @@
 //  Released under the MIT license.
 //
 
-#import <XCTest/XCTest.h>
+#import <SenTestingKit/SenTestingKit.h>
 #import "EXTCoroutine.h"
 
-@interface EXTCoroutineTest : XCTestCase {
+@interface EXTCoroutineTest : SenTestCase {
 @private
     
 }

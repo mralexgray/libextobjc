@@ -68,20 +68,11 @@
     }
 
     XCTAssertEqual(executed, 2U, @"onExit blocks should be executed even when goto is used");
-    
-    str = [@"foo" mutableCopy];
-    {
-        @onExit {
-            [str appendString:@"baz"];
-        };
-        [str appendString:@"bar"];
-        XCTAssertEqual(str, @"foobar", @"onExit block should not be executed before the scope ends");
-    }
 
     str = [@"foo" mutableCopy];
     [self nestedAppend:str];
 
-    XCTAssertEqual(str, @"foobar", @"'bar' should've been appended to 'foo' at the end of a called method that exited early");
+    XCTAssertEqualObjects(str, @"foobar", @"'bar' should've been appended to 'foo' at the end of a called method that exited early");
 }
 
 - (void)nestedAppend:(NSMutableString *)str {
@@ -148,7 +139,7 @@
 
         [NSException raise:@"EXTScopeTestException" format:@"test exception for @onExit cleanup in @try"];
     } @catch (NSException *exception) {
-        XCTAssertEqual([exception name], @"EXTScopeTestException", @"unexpected exception %@ thrown");
+        XCTAssertEqualObjects([exception name], @"EXTScopeTestException", @"unexpected exception %@ thrown");
     } @finally {
         XCTAssertTrue(cleanupBlockRun, @"@onExit block was not run when an exception was thrown");
     }
@@ -160,10 +151,10 @@
     @try {
         [self nestedThrowingAppend:str];
     } @catch (NSException *exception) {
-        XCTAssertEqual([exception name], @"EXTScopeTestException", @"unexpected exception %@ thrown");
+        XCTAssertEqualObjects([exception name], @"EXTScopeTestException", @"unexpected exception %@ thrown");
     }
 
-    XCTAssertEqual(str, @"foobar", @"'bar' should've been appended to 'foo' at the end of a called method that threw an exception");
+    XCTAssertEqualObjects(str, @"foobar", @"'bar' should've been appended to 'foo' at the end of a called method that threw an exception");
 }
 
 - (void)testWeakifyUnsafeifyStrongify {
@@ -182,8 +173,8 @@
         BOOL (^matchesFooOrBar)(NSString *) = ^ BOOL (NSString *str){
             @strongify(bar, foo);
 
-            XCTAssertEqual(foo, @"foo", @"");
-            XCTAssertEqual(bar, @"bar", @"");
+            XCTAssertEqualObjects(foo, @"foo", @"");
+            XCTAssertEqualObjects(bar, @"bar", @"");
 
             XCTAssertTrue(fooPtr != &foo, @"Address of 'foo' within block should be different from its address outside the block");
             XCTAssertTrue(barPtr != &bar, @"Address of 'bar' within block should be different from its address outside the block");

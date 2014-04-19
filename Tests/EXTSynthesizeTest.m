@@ -101,20 +101,4 @@
 	XCTAssertEqualObjects(owner.testAtomicCopyProperty, @"foobar", @"");
 }
 
-- (void)testMultiplePropertiesUsage {
-	NSObject *owner = [[NSObject alloc] init];
-
-	id value1 = [@"foobar" mutableCopy];
-	id value2 = [@"bardoo" mutableCopy];
-
-	owner.testNonatomicRetainProperty = value1;
-	XCTAssertEqualObjects(owner.testNonatomicRetainProperty, value1, @"");
-
-	owner.testAtomicRetainProperty = value2;
-	XCTAssertEqualObjects(owner.testAtomicRetainProperty, value2, @"");
-
-	XCTAssertEqualObjects(owner.testNonatomicRetainProperty, value1, @"");
-	XCTAssertEqualObjects(owner.testAtomicRetainProperty, value2, @"");
-}
-
 @end

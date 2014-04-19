@@ -7,11 +7,11 @@
 //  Released under the MIT license.
 //
 
-#import <XCTest/XCTest.h>
+#import <SenTestingKit/SenTestingKit.h>
 #import <Foundation/Foundation.h>
 #import "EXTProtocolCategory.h"
 
-@interface EXTProtocolCategoryTest : XCTestCase {
+@interface EXTProtocolCategoryTest : SenTestCase {
 
 }
 

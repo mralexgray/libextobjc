@@ -8,17 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B331F781805740400754399 /* EXTSynthesize.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FBB1D815F68657002281B9 /* EXTSynthesize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B6FCF9C1805771C00AACC84 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6FCF9B1805771C00AACC84 /* libffi.a */; };
-		7B6FCF9D1805773100AACC84 /* ffi_common.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B9C628918052E5A00EE5E3E /* ffi_common.h */; };
-		7B9C629618052F1800EE5E3E /* ffitarget_i386.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B9C628718052E5A00EE5E3E /* ffitarget_i386.h */; };
-		7B9C629718052F1800EE5E3E /* ffitarget_x86_64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B9C628818052E5A00EE5E3E /* ffitarget_x86_64.h */; };
-		7B9C629918052F1800EE5E3E /* ffi_i386.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B9C628A18052E5A00EE5E3E /* ffi_i386.h */; };
-		7B9C629A18052F1800EE5E3E /* ffi_x86_64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B9C628B18052E5A00EE5E3E /* ffi_x86_64.h */; };
-		7B9C629B18052F1800EE5E3E /* ffi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B9C628C18052E5A00EE5E3E /* ffi.h */; };
-		7B9C629C18052F1800EE5E3E /* ffitarget.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B9C628D18052E5A00EE5E3E /* ffitarget.h */; };
-		7BAB731C18082B91004ECBB9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAB731B18082B91004ECBB9 /* XCTest.framework */; };
-		876EE9D6170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 876EE9D5170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm */; };
-		876EE9D7170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 876EE9D5170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm */; };
+		7BF8793A189724F500640784 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF87939189724E200640784 /* libffi.a */; };
 		D002DAF813656CDF005348A5 /* EXTNilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D002DAF713656CDF005348A5 /* EXTNilTest.m */; };
 		D002DAF913656CDF005348A5 /* EXTNilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D002DAF713656CDF005348A5 /* EXTNilTest.m */; };
 		D003EEEF15924CF000410411 /* EXTVarargsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D003EEEE15924CF000410411 /* EXTVarargsTest.m */; };
@@ -67,7 +57,6 @@
 		D005F06C15950509007A8A1C /* EXTNil.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F02C15950509007A8A1C /* EXTNil.h */; };
 		D005F06D15950509007A8A1C /* EXTNil.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F02D15950509007A8A1C /* EXTNil.m */; };
 		D005F06E15950509007A8A1C /* EXTNil.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F02D15950509007A8A1C /* EXTNil.m */; };
-		D005F06F15950509007A8A1C /* extobjc_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D005F02E15950509007A8A1C /* extobjc_Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		D005F07015950509007A8A1C /* extobjc_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D005F02E15950509007A8A1C /* extobjc_Prefix.pch */; };
 		D005F07115950509007A8A1C /* extobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F02F15950509007A8A1C /* extobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D005F07215950509007A8A1C /* extobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F02F15950509007A8A1C /* extobjc.h */; };
@@ -109,9 +98,7 @@
 		D005F09615950509007A8A1C /* NSMethodSignature+EXT.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F04115950509007A8A1C /* NSMethodSignature+EXT.h */; };
 		D005F09715950509007A8A1C /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F04215950509007A8A1C /* NSMethodSignature+EXT.m */; };
 		D005F09815950509007A8A1C /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F04215950509007A8A1C /* NSMethodSignature+EXT.m */; };
-		D033765D131E53DB0039ACFD /* EXTPrivateMethodTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D033765C131E53DB0039ACFD /* EXTPrivateMethodTest.m */; };
 		D033765E131E53DB0039ACFD /* EXTPrivateMethodTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D033765C131E53DB0039ACFD /* EXTPrivateMethodTest.m */; };
-		D0337667131E54960039ACFD /* EXTFinalMethodTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0337666131E54960039ACFD /* EXTFinalMethodTest.m */; };
 		D0337668131E54960039ACFD /* EXTFinalMethodTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0337666131E54960039ACFD /* EXTFinalMethodTest.m */; };
 		D035A5BB148022B9006C1001 /* EXTAspectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D035A5BA148022B9006C1001 /* EXTAspectTest.m */; };
 		D035A5BC148022B9006C1001 /* EXTAspectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D035A5BA148022B9006C1001 /* EXTAspectTest.m */; };
@@ -156,7 +143,6 @@
 		D0E6A0F4159BB46D00FB92FC /* EXTAnnotationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E6A0F3159BB46D00FB92FC /* EXTAnnotationTest.m */; };
 		D0E6A0F5159BB46D00FB92FC /* EXTAnnotationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E6A0F3159BB46D00FB92FC /* EXTAnnotationTest.m */; };
 		D0E7E85A128F81FA00FE0263 /* EXTSafeCategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E7E83A128F7F2E00FE0263 /* EXTSafeCategoryTest.m */; };
-		D0E7E85B128F81FA00FE0263 /* EXTSafeCategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E7E83A128F7F2E00FE0263 /* EXTSafeCategoryTest.m */; };
 		D0E7E8CA128F8D1400FE0263 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E7E8C9128F8D1400FE0263 /* CoreFoundation.framework */; };
 		D0E7E909128F8DD200FE0263 /* EXTProtocolCategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E7E908128F8DD200FE0263 /* EXTProtocolCategoryTest.m */; };
 		D0E7E90A128F8DD200FE0263 /* EXTProtocolCategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E7E908128F8DD200FE0263 /* EXTProtocolCategoryTest.m */; };
@@ -175,6 +161,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7BF87936189724E200640784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BF87931189724E200640784 /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6F980BA147386130008F121;
+			remoteInfo = "libffi iOS";
+		};
+		7BF87938189724E200640784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BF87931189724E200640784 /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C43CB3D1534E9D100162364;
+			remoteInfo = "libffi OS X";
+		};
+		7BF8793B189724FF00640784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BF87931189724E200640784 /* libffi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C43CB3C1534E9D100162364;
+			remoteInfo = "libffi OS X";
+		};
 		D0CFB603128A8EB6006DC377 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -198,13 +205,6 @@
 			dstPath = include/libffi;
 			dstSubfolderSpec = 16;
 			files = (
-				7B6FCF9D1805773100AACC84 /* ffi_common.h in CopyFiles */,
-				7B9C629618052F1800EE5E3E /* ffitarget_i386.h in CopyFiles */,
-				7B9C629718052F1800EE5E3E /* ffitarget_x86_64.h in CopyFiles */,
-				7B9C629918052F1800EE5E3E /* ffi_i386.h in CopyFiles */,
-				7B9C629A18052F1800EE5E3E /* ffi_x86_64.h in CopyFiles */,
-				7B9C629B18052F1800EE5E3E /* ffi.h in CopyFiles */,
-				7B9C629C18052F1800EE5E3E /* ffitarget.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,18 +213,10 @@
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		7B331F791805747D00754399 /* libffi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libffi.dylib; path = usr/lib/libffi.dylib; sourceTree = SDKROOT; };
-		7B6FCF9B1805771C00AACC84 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = libffi/build/Debug/libffi.a; sourceTree = "<group>"; };
+		7B94F552189C31D0002C55CD /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Mac-StaticLibrary.xcconfig"; path = "/Volumes/2T/ServiceData/AtoZ.framework/AtoZ/AtoZAutoBox/../../xcconfigs/Mac OS X/Mac-StaticLibrary.xcconfig"; sourceTree = "<absolute>"; };
 		7B9C628518052E3400EE5E3E /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = libffi/build/Release/libffi.a; sourceTree = "<group>"; };
-		7B9C628718052E5A00EE5E3E /* ffitarget_i386.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ffitarget_i386.h; path = libffi/build/Release/usr/local/include/ffitarget_i386.h; sourceTree = "<group>"; };
-		7B9C628818052E5A00EE5E3E /* ffitarget_x86_64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ffitarget_x86_64.h; path = libffi/build/Release/usr/local/include/ffitarget_x86_64.h; sourceTree = "<group>"; };
-		7B9C628918052E5A00EE5E3E /* ffi_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ffi_common.h; path = libffi/build/Release/usr/local/include/ffi_common.h; sourceTree = "<group>"; };
-		7B9C628A18052E5A00EE5E3E /* ffi_i386.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ffi_i386.h; path = libffi/build/Release/usr/local/include/ffi_i386.h; sourceTree = "<group>"; };
-		7B9C628B18052E5A00EE5E3E /* ffi_x86_64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ffi_x86_64.h; path = libffi/build/Release/usr/local/include/ffi_x86_64.h; sourceTree = "<group>"; };
-		7B9C628C18052E5A00EE5E3E /* ffi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ffi.h; path = libffi/build/Release/usr/local/include/ffi.h; sourceTree = "<group>"; };
-		7B9C628D18052E5A00EE5E3E /* ffitarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ffitarget.h; path = libffi/build/Release/usr/local/include/ffitarget.h; sourceTree = "<group>"; };
 		7BAB731B18082B91004ECBB9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		876EE9D4170B13C000AB73BB /* EXTObjectiveCppCompileTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTObjectiveCppCompileTest.h; sourceTree = "<group>"; };
-		876EE9D5170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EXTObjectiveCppCompileTest.mm; sourceTree = "<group>"; };
+		7BF87931189724E200640784 /* libffi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libffi.xcodeproj; path = libffi/libffi.xcodeproj; sourceTree = "<group>"; };
 		D002DAF613656CDF005348A5 /* EXTNilTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTNilTest.h; sourceTree = "<group>"; };
 		D002DAF713656CDF005348A5 /* EXTNilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTNilTest.m; sourceTree = "<group>"; };
 		D003EEED15924CF000410411 /* EXTVarargsTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTVarargsTest.h; sourceTree = "<group>"; };
@@ -311,7 +303,7 @@
 		D09FB2FC159A459700A5F6A4 /* EXTSelectorChecking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTSelectorChecking.m; sourceTree = "<group>"; };
 		D0A8B029128A4261004AACE0 /* libextobjc_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libextobjc_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A8B187128A4303004AACE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D0A8B2DC128A495D004AACE0 /* Logic Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Logic Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A8B2DC128A495D004AACE0 /* Logic Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Logic Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A8B2DD128A495D004AACE0 /* OSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSX-Info.plist"; sourceTree = "<group>"; };
 		D0A8B30C128A4B56004AACE0 /* EXTSwizzleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTSwizzleTest.h; sourceTree = "<group>"; };
 		D0A8B30D128A4B56004AACE0 /* EXTSwizzleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTSwizzleTest.m; sourceTree = "<group>"; };
@@ -361,7 +353,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BAB731C18082B91004ECBB9 /* XCTest.framework in Frameworks */,
 				D0B6C9BC128B1A6F00137E97 /* libextobjc_OSX.a in Frameworks */,
 				D0E7E8CA128F8D1400FE0263 /* CoreFoundation.framework in Frameworks */,
 			);
@@ -379,7 +370,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B6FCF9C1805771C00AACC84 /* libffi.a in Frameworks */,
+				7BF8793A189724F500640784 /* libffi.a in Frameworks */,
 				D0A8B04F128A42F4004AACE0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,7 +383,7 @@
 			children = (
 				D2AAC07E0554694100DB518D /* libextobjc_OSX.a */,
 				D0A8B029128A4261004AACE0 /* libextobjc_iOS.a */,
-				D0A8B2DC128A495D004AACE0 /* Logic Tests.xctest */,
+				D0A8B2DC128A495D004AACE0 /* Logic Tests.octest */,
 				D0CFB60F128A8EEE006DC377 /* iOS Tests.octest */,
 			);
 			name = Products;
@@ -401,14 +392,8 @@
 		0867D691FE84028FC02AAC07 /* libextobjc */ = {
 			isa = PBXGroup;
 			children = (
-				7B6FCF9B1805771C00AACC84 /* libffi.a */,
-				7B9C628718052E5A00EE5E3E /* ffitarget_i386.h */,
-				7B9C628818052E5A00EE5E3E /* ffitarget_x86_64.h */,
-				7B9C628918052E5A00EE5E3E /* ffi_common.h */,
-				7B9C628A18052E5A00EE5E3E /* ffi_i386.h */,
-				7B9C628B18052E5A00EE5E3E /* ffi_x86_64.h */,
-				7B9C628C18052E5A00EE5E3E /* ffi.h */,
-				7B9C628D18052E5A00EE5E3E /* ffitarget.h */,
+				7B94F552189C31D0002C55CD /* Mac-StaticLibrary.xcconfig */,
+				7BF87931189724E200640784 /* libffi.xcodeproj */,
 				D005F017159504C0007A8A1C /* extobjc */,
 				D0919C4B146F99B900D680C9 /* Configuration */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -428,6 +413,15 @@
 				D0A8B20A128A430A004AACE0 /* Mac OS X */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BF87932189724E200640784 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BF87937189724E200640784 /* libffi.a */,
+				7BF87939189724E200640784 /* libffi.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D005F017159504C0007A8A1C /* extobjc */ = {
@@ -531,7 +525,8 @@
 				D0919C4E146F99B900D680C9 /* Configurations */,
 				D0919C52146F99B900D680C9 /* Targets */,
 			);
-			path = Base;
+			name = Base;
+			path = ../../../../../xcconfigs/Base;
 			sourceTree = "<group>";
 		};
 		D0919C4E146F99B900D680C9 /* Configurations */ = {
@@ -560,7 +555,8 @@
 				D0919C57146F99B900D680C9 /* iOS-Base.xcconfig */,
 				D0919C58146F99B900D680C9 /* iOS-StaticLibrary.xcconfig */,
 			);
-			path = iOS;
+			name = iOS;
+			path = ../../../../../xcconfigs/iOS;
 			sourceTree = "<group>";
 		};
 		D0919C59146F99B900D680C9 /* Mac OS X */ = {
@@ -572,7 +568,8 @@
 				D0919C5D146F99B900D680C9 /* Mac-Framework.xcconfig */,
 				D0919C5E146F99B900D680C9 /* Mac-StaticLibrary.xcconfig */,
 			);
-			path = "Mac OS X";
+			name = "Mac OS X";
+			path = "../../../../../xcconfigs/Mac OS X";
 			sourceTree = "<group>";
 		};
 		D0A8B20A128A430A004AACE0 /* Mac OS X */ = {
@@ -619,8 +616,6 @@
 				D0FE94031596668400F3AE1C /* EXTMultimethodTest.m */,
 				D002DAF613656CDF005348A5 /* EXTNilTest.h */,
 				D002DAF713656CDF005348A5 /* EXTNilTest.m */,
-				876EE9D4170B13C000AB73BB /* EXTObjectiveCppCompileTest.h */,
-				876EE9D5170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm */,
 				D0D1F93215A396F7002E2387 /* EXTPassthroughTest.h */,
 				D0D1F93315A396F7002E2387 /* EXTPassthroughTest.m */,
 				D033765B131E53DB0039ACFD /* EXTPrivateMethodTest.h */,
@@ -706,7 +701,6 @@
 				D005F06115950509007A8A1C /* EXTMaybe.h in Headers */,
 				D005F06715950509007A8A1C /* EXTMultiObject.h in Headers */,
 				D005F06B15950509007A8A1C /* EXTNil.h in Headers */,
-				D005F06F15950509007A8A1C /* extobjc_Prefix.pch in Headers */,
 				D005F07315950509007A8A1C /* EXTPrivateMethod.h in Headers */,
 				D005F07715950509007A8A1C /* EXTProtocolCategory.h in Headers */,
 				D005F07B15950509007A8A1C /* EXTRuntimeExtensions.h in Headers */,
@@ -754,7 +748,6 @@
 				D0A8B2D7128A495D004AACE0 /* Resources */,
 				D0A8B2D8128A495D004AACE0 /* Sources */,
 				D0A8B2D9128A495D004AACE0 /* Frameworks */,
-				D0A8B2DA128A495D004AACE0 /* Run Script (libextobjc tests) */,
 			);
 			buildRules = (
 			);
@@ -763,7 +756,7 @@
 			);
 			name = "OS X Tests";
 			productName = "Logic Tests";
-			productReference = D0A8B2DC128A495D004AACE0 /* Logic Tests.xctest */;
+			productReference = D0A8B2DC128A495D004AACE0 /* Logic Tests.octest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D0CFB60E128A8EEE006DC377 /* iOS Tests */ = {
@@ -797,6 +790,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7BF8793C189724FF00640784 /* PBXTargetDependency */,
 			);
 			name = "libextobjc (OS X)";
 			productName = libextobjc;
@@ -809,7 +803,12 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					D0A8B2DB128A495D004AACE0 = {
+						TestTargetID = D2AAC07D0554694100DB518D;
+					};
+				};
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "extobjc" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -824,6 +823,12 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* libextobjc */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7BF87932189724E200640784 /* Products */;
+					ProjectRef = 7BF87931189724E200640784 /* libffi.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D2AAC07D0554694100DB518D /* libextobjc (OS X) */,
@@ -833,6 +838,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7BF87937189724E200640784 /* libffi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libffi.a;
+			remoteRef = 7BF87936189724E200640784 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7BF87939189724E200640784 /* libffi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libffi.a;
+			remoteRef = 7BF87938189724E200640784 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D0A8B2D7128A495D004AACE0 /* Resources */ = {
@@ -852,21 +874,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D0A8B2DA128A495D004AACE0 /* Run Script (libextobjc tests) */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script (libextobjc tests)";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n#\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D0CFB60D128A8EEE006DC377 /* Run Script (libextobjc tests) */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -918,10 +925,7 @@
 			files = (
 				D0A8B30E128A4B56004AACE0 /* EXTSwizzleTest.m in Sources */,
 				D0C1D918128A57B600E96C0F /* EXTConcreteProtocolTest.m in Sources */,
-				D0E7E85B128F81FA00FE0263 /* EXTSafeCategoryTest.m in Sources */,
 				D0E7E909128F8DD200FE0263 /* EXTProtocolCategoryTest.m in Sources */,
-				D033765D131E53DB0039ACFD /* EXTPrivateMethodTest.m in Sources */,
-				D0337667131E54960039ACFD /* EXTFinalMethodTest.m in Sources */,
 				D0FD397413243A31009300A7 /* EXTRuntimeExtensionsTest.m in Sources */,
 				D05F5BF71335E43F00A34927 /* EXTBlockMethodTest.m in Sources */,
 				D07F83B2135D50E9008B9D6D /* EXTBlockTargetTest.m in Sources */,
@@ -939,7 +943,6 @@
 				D0E6A0F4159BB46D00FB92FC /* EXTAnnotationTest.m in Sources */,
 				D0D1F93415A396F7002E2387 /* EXTPassthroughTest.m in Sources */,
 				D0FBB1DB15F6897D002281B9 /* EXTSynthesizeTest.m in Sources */,
-				876EE9D6170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -970,7 +973,6 @@
 				D0E6A0F5159BB46D00FB92FC /* EXTAnnotationTest.m in Sources */,
 				D0D1F93515A396F7002E2387 /* EXTPassthroughTest.m in Sources */,
 				D0FBB1DC15F6897D002281B9 /* EXTSynthesizeTest.m in Sources */,
-				876EE9D7170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1005,6 +1007,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7BF8793C189724FF00640784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libffi OS X";
+			targetProxy = 7BF8793B189724FF00640784 /* PBXContainerItemProxy */;
+		};
 		D0CFB604128A8EB6006DC377 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2AAC07D0554694100DB518D /* libextobjc (OS X) */;
@@ -1020,63 +1027,68 @@
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0919C5E146F99B900D680C9 /* Mac-StaticLibrary.xcconfig */;
+			baseConfigurationReference = 7B94F552189C31D0002C55CD /* Mac-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
+					"$(HEADER_SEARCH_PATHS)",
 					"$(BUILT_PRODUCTS_DIR)/include",
-				);
-				INSTALL_PATH = build;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Volumes/2T/ServiceData/AtoZ.framework/Frameworks/libextobjc/libffi/build/Debug,
+					"\"$(SDKROOT)/usr/include/libxml2/**\"",
+					/usr/include/libxml2,
+					/usr/local/include,
+					libffi/osx/include,
 				);
 				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
 					"-sub_library",
 					libffi,
+					"-ObjC",
 				);
-				PRIVATE_HEADERS_FOLDER_PATH = "$(BUILT_PRODUCTS_DIR)/include";
 				PRODUCT_NAME = extobjc_OSX;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include /usr/include";
+				USER_HEADER_SEARCH_PATHS = "$(USER_HEADER_SEARCH_PATHS) $(SDKROOT)/usr/include/libxml2/** $(BUILT_PRODUCTS_DIR)/include /usr/include/libxml2 /usr/local/include libffi/osx/include";
 			};
 			name = Debug;
 		};
 		1DEB922008733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0919C5E146F99B900D680C9 /* Mac-StaticLibrary.xcconfig */;
+			baseConfigurationReference = 7B94F552189C31D0002C55CD /* Mac-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
+					"$(HEADER_SEARCH_PATHS)",
 					"$(BUILT_PRODUCTS_DIR)/include",
-				);
-				INSTALL_PATH = build;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Volumes/2T/ServiceData/AtoZ.framework/Frameworks/libextobjc/libffi/build/Debug,
+					"\"$(SDKROOT)/usr/include/libxml2/**\"",
+					/usr/include/libxml2,
+					/usr/local/include,
+					libffi/osx/include,
 				);
 				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
 					"-sub_library",
 					libffi,
+					"-ObjC",
 				);
-				PRIVATE_HEADERS_FOLDER_PATH = "$(BUILT_PRODUCTS_DIR)/include";
 				PRODUCT_NAME = extobjc_OSX;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include /usr/include";
+				USER_HEADER_SEARCH_PATHS = "$(USER_HEADER_SEARCH_PATHS) $(SDKROOT)/usr/include/libxml2/** $(BUILT_PRODUCTS_DIR)/include /usr/include/libxml2 /usr/local/include libffi/osx/include";
 			};
 			name = Release;
 		};
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0919C4F146F99B900D680C9 /* Debug.xcconfig */;
+			baseConfigurationReference = D0919C4D146F99B900D680C9 /* Common.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
@@ -1084,18 +1096,18 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				TEST_AFTER_BUILD = YES;
-				WARNING_CFLAGS = "-fmacro-backtrace-limit=0";
+				WARNING_CFLAGS = "";
 			};
 			name = Debug;
 		};
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0919C51146F99B900D680C9 /* Release.xcconfig */;
+			baseConfigurationReference = D0919C4D146F99B900D680C9 /* Common.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
@@ -1104,7 +1116,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				TEST_AFTER_BUILD = YES;
-				WARNING_CFLAGS = "-fmacro-backtrace-limit=0";
+				WARNING_CFLAGS = "";
 			};
 			name = Release;
 		};
@@ -1112,7 +1124,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C58146F99B900D680C9 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
 				HEADER_SEARCH_PATHS = "libffi/ios/include/**";
 				PRODUCT_NAME = extobjc_iOS;
@@ -1123,7 +1134,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C58146F99B900D680C9 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
 				HEADER_SEARCH_PATHS = "libffi/ios/include/**";
 				PRODUCT_NAME = extobjc_iOS;
@@ -1147,13 +1157,17 @@
 				HEADER_SEARCH_PATHS = libffi/osx/include;
 				INFOPLIST_FILE = "Tests/OSX-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
 					Foundation,
+					"-framework",
+					SenTestingKit,
 				);
 				PRODUCT_NAME = "Logic Tests";
 				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -1174,13 +1188,17 @@
 				HEADER_SEARCH_PATHS = libffi/osx/include;
 				INFOPLIST_FILE = "Tests/OSX-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
 					Foundation,
+					"-framework",
+					SenTestingKit,
 				);
 				PRODUCT_NAME = "Logic Tests";
 				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -1188,7 +1206,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C56146F99B900D680C9 /* iOS-Application.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -1221,7 +1238,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C56146F99B900D680C9 /* iOS-Application.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",

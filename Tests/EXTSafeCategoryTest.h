@@ -7,10 +7,10 @@
 //  Released under the MIT license.
 //
 
-#import <XCTest/XCTest.h>
+#import <SenTestingKit/SenTestingKit.h>
 #import <Foundation/Foundation.h>
 
-@interface EXTSafeCategoryTest : XCTestCase {
+@interface EXTSafeCategoryTest : SenTestCase {
 
 }
 

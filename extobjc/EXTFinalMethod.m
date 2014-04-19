@@ -9,7 +9,10 @@
 
 #import "EXTFinalMethod.h"
 #import "EXTRuntimeExtensions.h"
-#import <stdio.h>
+//@import Foundation;
+#import <Foundation/Foundation.h>
+
+//@import st
 
 Class ext_finalMethodsClass_ = nil;
 Protocol *ext_finalMethodsFakeProtocol_ = NULL;
@@ -48,7 +51,7 @@ BOOL ext_verifyProtocolMethodsAgainstSubclasses (Protocol *protocol, Class targe
             }
         }
 
-        free(subclassMethods);
+        free((void*)subclassMethods);
     }
 
     free(methods);

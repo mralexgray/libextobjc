@@ -9,11 +9,7 @@
 
 #import "EXTAspectTest.h"
 
-@interface AspectTestClass : NSObject <TestAspect, OtherTestAspect> {
-@public
-    int m_getterAdviceCallCount;
-    int m_setterAdviceCallCount;
-}
+@interface AspectTestClass : NSObject <TestAspect, OtherTestAspect>
 @property (copy) NSString *name;
 
 - (void)testMethod:(int)value;
@@ -21,16 +17,6 @@
 
 @implementation AspectTestClass
 @synthesize name = m_name;
-
-- (void) incGetterAdviceCallCount
-{
-    m_getterAdviceCallCount++;
-}
-
-- (void) incSetterAdviceCallCount
-{
-    m_setterAdviceCallCount++;
-}
 
 - (void)testMethod:(int)value; {
     NSParameterAssert(value == 42);
@@ -61,14 +47,7 @@
 }
 
 - (void)adviseSetters:(void (^)(void))body property:(NSString *)property {
-    NSLog(@"about to change %@", property);
-    [(id)self incSetterAdviceCallCount];
-    body();
-}
-
-- (void)adviseGetters:(void (^)(void))body property:(NSString *)property {
-    NSLog(@"about to fetch %@", property);
-    [(id)self incGetterAdviceCallCount];
+    NSLog(@"about to change %@ on %@", property, [(id)self name]);
     body();
 }
 @end
@@ -86,13 +65,9 @@
     AspectTestClass *obj = [[AspectTestClass alloc] init];
     XCTAssertNotNil(obj, @"");
 
-    XCTAssertNil(obj.name, @"");
     obj.name = @"MyObject";
-    XCTAssertEqualObjects([obj name], @"MyObject", @"");
     [obj testMethod:42];
 
-    XCTAssertEqual(obj->m_getterAdviceCallCount, 2, @"");
-    XCTAssertEqual(obj->m_setterAdviceCallCount, 1, @"");
     XCTAssertTrue([obj testOtherMethod], @"");
     XCTAssertEqualWithAccuracy([AspectTestClass testClassMethodWithString:@"foobar" length:6], 3.14, 0.01, @"");
 }

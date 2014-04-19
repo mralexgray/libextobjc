@@ -9,7 +9,10 @@
 
 #import "EXTMaybe.h"
 #import "EXTNil.h"
-#import <objc/runtime.h>
+//#import <objc/runtime.h>
+//@import ObjectiveC;
+#import <Foundation/NSObjCRuntime.h>
+
 
 @interface EXTMaybe () {
     /**

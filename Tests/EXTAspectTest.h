@@ -7,10 +7,10 @@
 //  Released under the MIT license.
 //
 
-#import <XCTest/XCTest.h>
+#import <SenTestingKit/SenTestingKit.h>
 #import "EXTAspect.h"
 
-@interface EXTAspectTest : XCTestCase
+@interface EXTAspectTest : SenTestCase
 @end
 
 @aspect(TestAspect);

@@ -7,11 +7,19 @@
 //  Released under the MIT license.
 //
 
+//#import "ffi.h"
+//@import Foundation;
+#import <Foundation/Foundation.h>
+
+#import <ffi/ffi.h>
+//@import ObjectiveC;
+#import <Foundation/NSObjCRuntime.h>
+
 #import "EXTAspect.h"
 #import "EXTRuntimeExtensions.h"
 #import "EXTScope.h"
-#import "ffi.h"
-#import <objc/runtime.h>
+
+//#import <objc/runtime.h>
 
 typedef void (^ext_adviceOriginalMethodBlock)(void);
 typedef void (*ext_universalAdviceIMP)(id, SEL, ext_adviceOriginalMethodBlock);
@@ -481,9 +489,9 @@ static void ext_injectAspect (Class containerClass, Class class) {
         }
     }
 }
+BOOL ext_addAspect (Protocol *protocol, Class methodContainer){
 
-BOOL ext_addAspect (Protocol *protocol, Class methodContainer) {
-    return ext_loadSpecialProtocol(protocol, ^(Class destinationClass){
+  return ext_loadSpecialProtocol(protocol, ^(Class destinationClass){
         // instance methods
         ext_injectAspect(methodContainer, destinationClass);
 

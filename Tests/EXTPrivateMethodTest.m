@@ -45,7 +45,7 @@
 
     PrivateClass *obj = [PrivateClass new];
     XCTAssertFalse(obj.private, @"");
-    XCTAssertFalse([obj privateMethod], @"");    //XCTAssertFalse([obj privateMethod], NO, @"");
+    XCTAssertFalse([obj privateMethod], NO, @"");
 
     obj.private = YES;
     XCTAssertTrue(obj.private, @"");

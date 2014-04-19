@@ -7,6 +7,13 @@
 //  Released under the MIT license.
 //
 
+//@import Foundation;
+//@import NSOb;
+
+#import <Foundation/Foundation.h>
+//NSObjCRuntime.h>
+#import <objc/runtime.h>
+
 #import "EXTADT.h"
 #import "EXTAnnotation.h"
 #import "EXTAspect.h"

@@ -7,8 +7,8 @@
 //  Released under the MIT license.
 //
 
-#import <XCTest/XCTest.h>
+#import <SenTestingKit/SenTestingKit.h>
 
-@interface EXTSynthesizeTest : XCTestCase
+@interface EXTSynthesizeTest : SenTestCase
 
 @end

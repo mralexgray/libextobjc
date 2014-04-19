@@ -1,6 +1,6 @@
-[submodule "Configuration"]
-	path = Configuration
-	url = git://github.com/jspahrsummers/xcconfigs.git
+# [submodule "Configuration"]
+# 	path = Configuration
+# 	url = git://github.com/jspahrsummers/xcconfigs.git
 [submodule "libffi"]
 	path = libffi
-	url = git://github.com/jspahrsummers/libffi.git
+	url = https://github.com/mralexgray/libffi.git

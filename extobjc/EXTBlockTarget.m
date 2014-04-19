@@ -8,7 +8,11 @@
 //
 
 #import "EXTBlockTarget.h"
-#import <objc/runtime.h>
+//@import ObjectiveC;
+#import <Foundation/NSObjCRuntime.h>
+
+
+//#import <objc/runtime.h>
 
 // doesn't include 'self' and '_cmd'
 static

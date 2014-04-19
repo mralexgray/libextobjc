@@ -89,6 +89,9 @@
     interface NAME ## _ProtocolMethodContainer : NSObject < NAME > {} \
     @end \
     \
+    _Pragma("clang diagnostic push") \
+    _Pragma("clang diagnostic ignored \"-Wobjc-protocol-property-synthesis\"") \
+    \
     @implementation NAME ## _ProtocolMethodContainer \
     /*
      * when this class is loaded into the runtime, add the concrete protocol
@@ -115,7 +118,8 @@
          * loading
          */ \
         ext_loadConcreteProtocol(objc_getProtocol(metamacro_stringify(NAME))); \
-    }
+    }\
+  _Pragma("clang diagnostic pop")
 
 /*** implementation details follow ***/
 BOOL ext_addConcreteProtocol (Protocol *protocol, Class methodContainer);
