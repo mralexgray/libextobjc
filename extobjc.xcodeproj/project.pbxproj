@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B26288D190AA26C008AFC16 /* metamacros_test.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B26288C190AA26C008AFC16 /* metamacros_test.m */; };
 		7B331F781805740400754399 /* EXTSynthesize.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FBB1D815F68657002281B9 /* EXTSynthesize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BF8793A189724F500640784 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF87939189724E200640784 /* libffi.a */; };
 		D002DAF813656CDF005348A5 /* EXTNilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D002DAF713656CDF005348A5 /* EXTNilTest.m */; };
@@ -212,6 +213,7 @@
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		7B26288C190AA26C008AFC16 /* metamacros_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = metamacros_test.m; sourceTree = "<group>"; };
 		7B331F791805747D00754399 /* libffi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libffi.dylib; path = usr/lib/libffi.dylib; sourceTree = SDKROOT; };
 		7B94F552189C31D0002C55CD /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Mac-StaticLibrary.xcconfig"; path = "/Volumes/2T/ServiceData/AtoZ.framework/AtoZ/AtoZAutoBox/../../xcconfigs/Mac OS X/Mac-StaticLibrary.xcconfig"; sourceTree = "<absolute>"; };
 		7B9C628518052E3400EE5E3E /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = libffi/build/Release/libffi.a; sourceTree = "<group>"; };
@@ -303,7 +305,7 @@
 		D09FB2FC159A459700A5F6A4 /* EXTSelectorChecking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTSelectorChecking.m; sourceTree = "<group>"; };
 		D0A8B029128A4261004AACE0 /* libextobjc_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libextobjc_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A8B187128A4303004AACE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D0A8B2DC128A495D004AACE0 /* Logic Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Logic Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A8B2DC128A495D004AACE0 /* Logic Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Logic Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A8B2DD128A495D004AACE0 /* OSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSX-Info.plist"; sourceTree = "<group>"; };
 		D0A8B30C128A4B56004AACE0 /* EXTSwizzleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTSwizzleTest.h; sourceTree = "<group>"; };
 		D0A8B30D128A4B56004AACE0 /* EXTSwizzleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTSwizzleTest.m; sourceTree = "<group>"; };
@@ -383,7 +385,7 @@
 			children = (
 				D2AAC07E0554694100DB518D /* libextobjc_OSX.a */,
 				D0A8B029128A4261004AACE0 /* libextobjc_iOS.a */,
-				D0A8B2DC128A495D004AACE0 /* Logic Tests.octest */,
+				D0A8B2DC128A495D004AACE0 /* Logic Tests.xctest */,
 				D0CFB60F128A8EEE006DC377 /* iOS Tests.octest */,
 			);
 			name = Products;
@@ -592,6 +594,7 @@
 		D0A8B2E4128A497A004AACE0 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				7B26288C190AA26C008AFC16 /* metamacros_test.m */,
 				D088C7F31591377000C70CE2 /* EXTADTTest.h */,
 				D088C7F41591377000C70CE2 /* EXTADTTest.m */,
 				D0E6A0F2159BB46D00FB92FC /* EXTAnnotationTest.h */,
@@ -741,9 +744,9 @@
 			productReference = D0A8B029128A4261004AACE0 /* libextobjc_iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D0A8B2DB128A495D004AACE0 /* OS X Tests */ = {
+		D0A8B2DB128A495D004AACE0 /* libextobjc Tests (OSX) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0A8B2E0128A495D004AACE0 /* Build configuration list for PBXNativeTarget "OS X Tests" */;
+			buildConfigurationList = D0A8B2E0128A495D004AACE0 /* Build configuration list for PBXNativeTarget "libextobjc Tests (OSX)" */;
 			buildPhases = (
 				D0A8B2D7128A495D004AACE0 /* Resources */,
 				D0A8B2D8128A495D004AACE0 /* Sources */,
@@ -754,14 +757,14 @@
 			dependencies = (
 				D0CFB604128A8EB6006DC377 /* PBXTargetDependency */,
 			);
-			name = "OS X Tests";
+			name = "libextobjc Tests (OSX)";
 			productName = "Logic Tests";
-			productReference = D0A8B2DC128A495D004AACE0 /* Logic Tests.octest */;
+			productReference = D0A8B2DC128A495D004AACE0 /* Logic Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D0CFB60E128A8EEE006DC377 /* iOS Tests */ = {
+		D0CFB60E128A8EEE006DC377 /* libextobjc Tests (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0CFB613128A8EEF006DC377 /* Build configuration list for PBXNativeTarget "iOS Tests" */;
+			buildConfigurationList = D0CFB613128A8EEF006DC377 /* Build configuration list for PBXNativeTarget "libextobjc Tests (iOS)" */;
 			buildPhases = (
 				D0CFB60A128A8EEE006DC377 /* Resources */,
 				D0CFB60B128A8EEE006DC377 /* Sources */,
@@ -773,7 +776,7 @@
 			dependencies = (
 				D0CFB61A128A8F05006DC377 /* PBXTargetDependency */,
 			);
-			name = "iOS Tests";
+			name = "libextobjc Tests (iOS)";
 			productName = "iOS Tests";
 			productReference = D0CFB60F128A8EEE006DC377 /* iOS Tests.octest */;
 			productType = "com.apple.product-type.bundle";
@@ -833,8 +836,8 @@
 			targets = (
 				D2AAC07D0554694100DB518D /* libextobjc (OS X) */,
 				D0A8B028128A4261004AACE0 /* libextobjc (iOS) */,
-				D0A8B2DB128A495D004AACE0 /* OS X Tests */,
-				D0CFB60E128A8EEE006DC377 /* iOS Tests */,
+				D0A8B2DB128A495D004AACE0 /* libextobjc Tests (OSX) */,
+				D0CFB60E128A8EEE006DC377 /* libextobjc Tests (iOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -999,6 +1002,7 @@
 				D005F09715950509007A8A1C /* NSMethodSignature+EXT.m in Sources */,
 				D0FE94001596665D00F3AE1C /* EXTMultimethod.m in Sources */,
 				D0EF9BFF15992F080066DFBC /* EXTADT.m in Sources */,
+				7B26288D190AA26C008AFC16 /* metamacros_test.m in Sources */,
 				D09FB2FD159A459700A5F6A4 /* EXTSelectorChecking.m in Sources */,
 				D0E6A0F0159BB43B00FB92FC /* EXTAnnotation.m in Sources */,
 			);
@@ -1097,7 +1101,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				TEST_AFTER_BUILD = YES;
+				SDKROOT = macosx;
 				WARNING_CFLAGS = "";
 			};
 			name = Debug;
@@ -1115,7 +1119,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				TEST_AFTER_BUILD = YES;
+				SDKROOT = macosx;
 				WARNING_CFLAGS = "";
 			};
 			name = Release;
@@ -1156,18 +1160,14 @@
 				GCC_WARN_PEDANTIC = NO;
 				HEADER_SEARCH_PATHS = libffi/osx/include;
 				INFOPLIST_FILE = "Tests/OSX-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
-					"-ObjC",
 					"-framework",
 					Foundation,
-					"-framework",
-					SenTestingKit,
+					"-lextobjc_OSX",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "Logic Tests";
-				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
@@ -1187,18 +1187,14 @@
 				GCC_WARN_PEDANTIC = NO;
 				HEADER_SEARCH_PATHS = libffi/osx/include;
 				INFOPLIST_FILE = "Tests/OSX-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
-					"-ObjC",
 					"-framework",
 					Foundation,
-					"-framework",
-					SenTestingKit,
+					"-lextobjc_OSX",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "Logic Tests";
-				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -1224,7 +1220,7 @@
 					"-framework",
 					Foundation,
 					"-framework",
-					SenTestingKit,
+					XCTest,
 					"-framework",
 					UIKit,
 				);
@@ -1256,7 +1252,7 @@
 					"-framework",
 					Foundation,
 					"-framework",
-					SenTestingKit,
+					XCTest,
 					"-framework",
 					UIKit,
 				);
@@ -1296,7 +1292,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0A8B2E0128A495D004AACE0 /* Build configuration list for PBXNativeTarget "OS X Tests" */ = {
+		D0A8B2E0128A495D004AACE0 /* Build configuration list for PBXNativeTarget "libextobjc Tests (OSX)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0A8B2DE128A495D004AACE0 /* Debug */,
@@ -1305,7 +1301,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0CFB613128A8EEF006DC377 /* Build configuration list for PBXNativeTarget "iOS Tests" */ = {
+		D0CFB613128A8EEF006DC377 /* Build configuration list for PBXNativeTarget "libextobjc Tests (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0CFB611128A8EEF006DC377 /* Debug */,

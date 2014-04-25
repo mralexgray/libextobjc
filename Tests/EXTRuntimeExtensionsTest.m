@@ -51,8 +51,8 @@
     XCTAssertEqual(attributes->dynamic, NO, @"");
     XCTAssertEqual(attributes->memoryManagementPolicy, ext_propertyMemoryManagementPolicyAssign, @"");
 
-    XCTAssertEqual(attributes->getter, @selector(isNormalBool), @"");
-    XCTAssertEqual(attributes->setter, @selector(setNormalBool:), @"");
+    XCTAssertEqual(attributes->getter, NSSelectorFromString(@"isNormalBool"), @"");
+    XCTAssertEqual(attributes->setter, NSSelectorFromString(@"setNormalBool:"), @"");
 
     XCTAssertTrue(strcmp(attributes->ivar, "_normalBool") == 0, @"expected property ivar name to be '_normalBool'");
     XCTAssertTrue(strlen(attributes->type) > 0, @"property type is missing from attributes");

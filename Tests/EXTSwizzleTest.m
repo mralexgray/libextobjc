@@ -43,7 +43,7 @@
     XCTAssertNotNil(request, @"could not initialize NSURLRequest test object");
     
     XCTAssertTrue([request respondsToSelector:@selector(replacementSelf)], @"NSURLRequest category did not load at test case startup");
-    XCTAssertTrueNoThrow([[request replacementSelf] isKindOfClass:[NSString class]], @"expected -replacementSelf of NSURLRequest to return a string");
+    XCTAssertNoThrow([[request replacementSelf] isKindOfClass:[NSString class]], @"expected -replacementSelf of NSURLRequest to return a string");
     XCTAssertEqual(request, [request self], @"expected -self of NSURLRequest object to match itself");
     
     EXT_SWIZZLE_INSTANCE_METHODS(
@@ -53,7 +53,7 @@
         oldSelf
     );
     
-    XCTAssertTrueNoThrow([[request self] isKindOfClass:[NSString class]], @"expected -self of NSURLRequest object to return a string after swapping implementation");
+    XCTAssertNoThrow([[request self] isKindOfClass:[NSString class]], @"expected -self of NSURLRequest object to return a string after swapping implementation");
     XCTAssertTrue([request respondsToSelector:@selector(oldSelf)], @"expected NSURLRequest to respond to -oldSelf after renaming -self");
     XCTAssertEqual([(id)request oldSelf], request, @"expected -oldSelf of NSURLRequest object to match itself after swapping implementation");
     
@@ -85,7 +85,7 @@
     
     XCTAssertEqualObjects([NSURLRequest class], [NSString class], @"expected [NSURLRequest class] to equal [NSString class] after swapping out implementation");
     XCTAssertTrue([NSURLRequest respondsToSelector:@selector(oldClass)], @"expected NSURLRequest to respond to +oldClass after renaming +class");
-    XCTAssertTrueNoThrow([[NSClassFromString(@"NSURLRequest") oldClass] isEqual:NSClassFromString(@"NSURLRequest")], @"expected [NSURLRequest oldClass] to be a valid method that equals NSURLRequest");
+    XCTAssertNoThrow([[NSClassFromString(@"NSURLRequest") oldClass] isEqual:NSClassFromString(@"NSURLRequest")], @"expected [NSURLRequest oldClass] to be a valid method that equals NSURLRequest");
     
     // ensure that superclass implemenations are intact
     XCTAssertEqualObjects([NSObject class], NSClassFromString(@"NSObject"), @"expected [NSObject class] to equal NSObject");

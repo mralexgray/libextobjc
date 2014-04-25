@@ -76,16 +76,16 @@
 
 - (void)testFinalMethods {
     MySuperclass *superObj = [[MySuperclass alloc] init];
-    XCTAssertNotNil(superObj, @"could not allocate instance of class containing final methods");
-    XCTAssertEqualObjects([superObj superclassFinalMethod], [MySuperclass class], @"could not call final instance method on a superclass");
-    XCTAssertNil([superObj normalMethod], @"expected normal method to work in a class with final methods");
+    STAssertNotNil(superObj, @"could not allocate instance of class containing final methods");
+    STAssertEqualObjects([superObj superclassFinalMethod], [MySuperclass class], @"could not call final instance method on a superclass");
+    STAssertNil([superObj normalMethod], @"expected normal method to work in a class with final methods");
 
-    XCTAssertEqualObjects([MySuperclass superclassFinalClassMethod], [MySuperclass class], @"could not call final class method on superclass");
-    XCTAssertNoThrow([MySubclass subclassFinalClassMethod], @"could not call final class method on a subclass");
+    STAssertEqualObjects([MySuperclass superclassFinalClassMethod], [MySuperclass class], @"could not call final class method on superclass");
+    STAssertNoThrow([MySubclass subclassFinalClassMethod], @"could not call final class method on a subclass");
 
     MySubclass *subObj = [[MySubclass alloc] init];
-    XCTAssertNotNil(subObj, @"could not allocate instance of subclass containing final methods");
-    XCTAssertEqualObjects([subObj normalMethod], [MySubclass class], @"expected normal method to work in a subclass with final methods");
+    STAssertNotNil(subObj, @"could not allocate instance of subclass containing final methods");
+    STAssertEqualObjects([subObj normalMethod], [MySubclass class], @"expected normal method to work in a subclass with final methods");
 }
 
 @end

@@ -95,7 +95,7 @@
         } else if ([self isMemberOfClass:[BlockTestSubclass class]]) {
             return @"subclass";
         } else {
-            STFail(@"expected self to be an instance of BlockTestClass or BlockTestSubclass");
+            XCTFail(@"expected self to be an instance of BlockTestClass or BlockTestSubclass");
             return nil;
         }
     };

@@ -26,9 +26,9 @@ typedef void (*ext_universalAdviceIMP)(id, SEL, ext_adviceOriginalMethodBlock);
 typedef void (*ext_propertyAdviceIMP)(id, SEL, ext_adviceOriginalMethodBlock, NSString *);
 typedef void (*ext_FFIClosureFunction)(ffi_cif *, void *, void **, void *);
 
-#define ext_universalAdviceSelector         @selector(advise:)
-#define ext_gettersAdviceSelector           @selector(adviseGetters:property:)
-#define ext_settersAdviceSelector           @selector(adviseSetters:property:)
+#define ext_universalAdviceSelector         NSSelectorFromString(@"advise:")
+#define ext_gettersAdviceSelector           NSSelectorFromString(@"adviseGetters:property:")
+#define ext_settersAdviceSelector           NSSelectorFromString(@"adviseSetters:property:")
 
 @interface NSObject (AspectContainerInformalProtocol)
 + (NSString *)aspectName;
