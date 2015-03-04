@@ -122,7 +122,7 @@ static void ext_injectSpecialProtocols (void) {
     }
 
 	// use this instead of ext_copyClassList() to avoid sending +initialize to
-	// classes that we don't plan to inject into (this avoids some XCTest
+	// classes that we don't plan to inject into (this avoids some SenTestingKit
 	// timing issues)
 	classCount = objc_getClassList(allClasses, classCount);
 

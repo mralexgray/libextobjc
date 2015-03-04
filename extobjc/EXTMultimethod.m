@@ -217,7 +217,7 @@ BOOL ext_loadMultimethods (Class targetClass) {
     if (!methods)
         return NO;
 
-    NSMutableDictionary *implementationsBySelectorName = [NSMutableDictionary dictionary];
+    NSMutableDictionary *implementationsBySelectorName = @{}.mutableCopy;
 
     for (unsigned i = 0; i < methodCount; ++i) {
         SEL selector = method_getName(methods[i]);

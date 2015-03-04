@@ -13,9 +13,9 @@
 
 - (void)testCheckedSelectors {
     NSString *str = @"foobar";
-    XCTAssertEqual(@checkselector(str, compare:, options:), @selector(compare:options:), @"");
+    STAssertEquals(@checkselector(str, compare:, options:), @selector(compare:options:), @"");
 
-    XCTAssertEqual(@checkselector([NSURL class], URLWithString:), @selector(URLWithString:), @"");
+    STAssertEquals(@checkselector([NSURL class], URLWithString:), @selector(URLWithString:), @"");
 }
 
 @end

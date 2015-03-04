@@ -9,7 +9,7 @@
 
 #import "EXTAnnotation.h"
 #import "EXTScope.h"
-//@import ObjectiveC;
+@import ObjectiveC;
 #import <Foundation/NSObjCRuntime.h>
 
 //#import <objc/runtime.h>

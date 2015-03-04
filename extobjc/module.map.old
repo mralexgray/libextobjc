@@ -1,0 +1,9 @@
+
+framework module ExtObjC {
+ umbrella header "ExtObjC.h"
+   export *
+  module * {
+    export *
+  }
+}
+

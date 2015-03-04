@@ -41,16 +41,16 @@
 		id value __attribute__((objc_precise_lifetime)) = [@"foobar" mutableCopy];
 
 		weakValue = value;
-		XCTAssertNotNil(weakValue, @"");
+		STAssertNotNil(weakValue, @"");
 
 		owner.testNonatomicAssignProperty = value;
-		XCTAssertEqual(owner.testNonatomicAssignProperty, value, @"");
+		STAssertEquals(owner.testNonatomicAssignProperty, value, @"");
 
 		owner.testAtomicAssignProperty = value;
-		XCTAssertEqual(owner.testAtomicAssignProperty, value, @"");
+		STAssertEquals(owner.testAtomicAssignProperty, value, @"");
 	}
 
-	XCTAssertNil(weakValue, @"");
+	STAssertNil(weakValue, @"");
 }
 
 - (void)testStrongProperties {
@@ -62,18 +62,18 @@
 		id value __attribute__((objc_precise_lifetime)) = [@"foobar" mutableCopy];
 
 		weakValue = value;
-		XCTAssertNotNil(weakValue, @"");
+		STAssertNotNil(weakValue, @"");
 
 		owner.testNonatomicRetainProperty = value;
-		XCTAssertEqual(owner.testNonatomicRetainProperty, value, @"");
+		STAssertEquals(owner.testNonatomicRetainProperty, value, @"");
 
 		owner.testAtomicRetainProperty = value;
-		XCTAssertEqual(owner.testAtomicRetainProperty, value, @"");
+		STAssertEquals(owner.testAtomicRetainProperty, value, @"");
 	}
 
-	XCTAssertNotNil(weakValue, @"");
-	XCTAssertEqual(owner.testNonatomicRetainProperty, weakValue, @"");
-	XCTAssertEqual(owner.testAtomicRetainProperty, weakValue, @"");
+	STAssertNotNil(weakValue, @"");
+	STAssertEquals(owner.testNonatomicRetainProperty, weakValue, @"");
+	STAssertEquals(owner.testAtomicRetainProperty, weakValue, @"");
 }
 
 - (void)testCopyProperties {
@@ -85,20 +85,20 @@
 		id value __attribute__((objc_precise_lifetime)) = [@"foobar" mutableCopy];
 
 		weakValue = value;
-		XCTAssertNotNil(weakValue, @"");
+		STAssertNotNil(weakValue, @"");
 
 		owner.testNonatomicCopyProperty = value;
-		XCTAssertFalse(owner.testNonatomicCopyProperty == value, @"");
-		XCTAssertEqualObjects(owner.testNonatomicCopyProperty, value, @"");
+		STAssertFalse(owner.testNonatomicCopyProperty == value, @"");
+		STAssertEqualObjects(owner.testNonatomicCopyProperty, value, @"");
 
 		owner.testAtomicCopyProperty = value;
-		XCTAssertFalse(owner.testAtomicCopyProperty == value, @"");
-		XCTAssertEqualObjects(owner.testAtomicCopyProperty, value, @"");
+		STAssertFalse(owner.testAtomicCopyProperty == value, @"");
+		STAssertEqualObjects(owner.testAtomicCopyProperty, value, @"");
 	}
 
-	XCTAssertNil(weakValue, @"");
-	XCTAssertEqualObjects(owner.testNonatomicCopyProperty, @"foobar", @"");
-	XCTAssertEqualObjects(owner.testAtomicCopyProperty, @"foobar", @"");
+	STAssertNil(weakValue, @"");
+	STAssertEqualObjects(owner.testNonatomicCopyProperty, @"foobar", @"");
+	STAssertEqualObjects(owner.testAtomicCopyProperty, @"foobar", @"");
 }
 
 @end

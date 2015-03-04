@@ -8,7 +8,7 @@
 //
 
 #import "EXTBlockTarget.h"
-//@import ObjectiveC;
+@import ObjectiveC;
 #import <Foundation/NSObjCRuntime.h>
 
 

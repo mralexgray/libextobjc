@@ -59,7 +59,7 @@ typedef enum {
 /**
  * A mask for the overwriting behavior flags of #ext_methodInjectionBehavior.
  */
-static const ext_methodInjectionBehavior ext_methodInjectionOverwriteBehaviorMask = 0x3;
+static const ext_methodInjectionBehavior ext_methodInjectionOverwriteBehaviorMask = 0x03;
 
 /**
  * Describes the memory management policy of a property.

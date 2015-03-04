@@ -26,19 +26,19 @@
 - (void)testObjectID {
     NSDictionary *annotations = ext_getPropertyAnnotation([AnnotatedClass class], @"objectID");
     NSDictionary *expected = @{ @"APIKey" : @"object_id" };
-    XCTAssertEqualObjects(annotations, expected, @"");
+    STAssertEqualObjects(annotations, expected, @"");
 }
 
 - (void)testName {
     NSDictionary *annotations = ext_getPropertyAnnotation([AnnotatedClass class], @"name");
     NSDictionary *expected = @{ @"APIKey": @"full_name", @"other_info": @5 };
-    XCTAssertEqualObjects(annotations, expected, @"");
+    STAssertEqualObjects(annotations, expected, @"");
 }
 
 - (void)testVersion {
     NSDictionary *annotations = ext_getClassAnnotation([AnnotatedClass class]);
     NSDictionary *expected = @{ @"version" : @"1.1", @"debug_name": @"EXTAnnotation test class" };
-    XCTAssertEqualObjects(annotations, expected, @"");
+    STAssertEqualObjects(annotations, expected, @"");
 }
 
 @end

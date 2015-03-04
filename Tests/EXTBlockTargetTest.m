@@ -23,19 +23,19 @@
         action:^{ executed = YES; }
     ];
 
-    XCTAssertNotNil(target, @"could not initialize EXTBlockTarget instance");
-    XCTAssertFalse(executed, @"block should not have executed yet");
+    STAssertNotNil(target, @"could not initialize EXTBlockTarget instance");
+    STAssertFalse(executed, @"block should not have executed yet");
 
 //    [target performSelector:NSSelectorFromString(@"setExecuted")];
-//    XCTAssertTrue(executed, @"block should have been executed when selector was invoked manually");
+//    STAssertTrue(executed, @"block should have been executed when selector was invoked manually");
 
     executed = NO;
 
     [target performSelector:NSSelectorFromString(@"setExecuted") withObject:nil afterDelay:0];
-    XCTAssertFalse(executed, @"block should not have executed yet");
+    STAssertFalse(executed, @"block should not have executed yet");
 
     [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
-    XCTAssertTrue(executed, @"block should have executed after run loop has iterated a few times");
+    STAssertTrue(executed, @"block should have executed after run loop has iterated a few times");
 }
 
 @end

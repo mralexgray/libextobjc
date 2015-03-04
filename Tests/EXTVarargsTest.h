@@ -7,9 +7,9 @@
 //  Released under the MIT license.
 //
 
-#import <XCTest/XCTest.h>
+#import <SenTestingKit/SenTestingKit.h>
 #import "EXTVarargs.h"
 
-@interface EXTVarargsTest : XCTestCase
+@interface EXTVarargsTest : SenTestCase
 
 @end

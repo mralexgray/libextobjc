@@ -36,7 +36,7 @@
     NSDictionary *userInfo = @{NSLocalizedDescriptionKey: self.errorDescription};
 
     NSError *error = [NSError errorWithDomain:self.errorDomain code:self.errorCode userInfo:userInfo];
-    XCTAssertNotNil(error, @"");
+    STAssertNotNil(error, @"");
 
     return error;
 }
@@ -44,65 +44,65 @@
 - (void)testErrorMaybe {
     NSError *error = self.error;
     id maybe = [EXTMaybe maybeWithError:error];
-    XCTAssertNotNil(maybe, @"");
+    STAssertNotNil(maybe, @"");
 
-    XCTAssertEqualObjects(maybe, error, @"");
-    XCTAssertTrue([maybe isKindOfClass:[NSError class]], @"");
-    XCTAssertTrue([maybe isMemberOfClass:[NSError class]], @"");
-    XCTAssertTrue([maybe isProxy], @"");
+    STAssertEqualObjects(maybe, error, @"");
+    STAssertTrue([maybe isKindOfClass:[NSError class]], @"");
+    STAssertTrue([maybe isMemberOfClass:[NSError class]], @"");
+    STAssertTrue([maybe isProxy], @"");
 
     // test an NSString method
-    XCTAssertEqual([maybe length], (NSUInteger)0, @"");
+    STAssertEquals([maybe length], (NSUInteger)0, @"");
 
     id obj = [EXTMaybe validObjectWithMaybe:maybe orElse:^(NSError *localError){
-        XCTAssertEqualObjects(error, localError, @"");
+        STAssertEqualObjects(error, localError, @"");
 
         return @YES;
     }];
 
-    XCTAssertEqualObjects(obj, [NSNumber numberWithBool:YES], @"");
+    STAssertEqualObjects(obj, [NSNumber numberWithBool:YES], @"");
 }
 
 - (void)testValidObjectWithMaybeNil {
     id obj = [EXTMaybe validObjectWithMaybe:nil orElse:^(NSError *localError){
-        XCTAssertNil(localError, @"");
+        STAssertNil(localError, @"");
 
         return @YES;
     }];
 
-    XCTAssertEqualObjects(obj, [NSNumber numberWithBool:YES], @"");
+    STAssertEqualObjects(obj, [NSNumber numberWithBool:YES], @"");
 }
 
 - (void)testValidObjectWithMaybeEXTNil {
     id obj = [EXTMaybe validObjectWithMaybe:[EXTNil null] orElse:^(NSError *localError){
-        XCTAssertNil(localError, @"");
+        STAssertNil(localError, @"");
 
         return @YES;
     }];
 
-    XCTAssertEqualObjects(obj, [NSNumber numberWithBool:YES], @"");
+    STAssertEqualObjects(obj, [NSNumber numberWithBool:YES], @"");
 }
 
 - (void)testValidObjectWithMaybeNSNull {
     id obj = [EXTMaybe validObjectWithMaybe:[NSNull null] orElse:^(NSError *localError){
-        XCTAssertNil(localError, @"");
+        STAssertNil(localError, @"");
 
         return @YES;
     }];
 
-    XCTAssertEqualObjects(obj, [NSNumber numberWithBool:YES], @"");
+    STAssertEqualObjects(obj, [NSNumber numberWithBool:YES], @"");
 }
 
 - (void)testValidObjectWithMaybeEXTNilAndNilBlock {
     id obj = [EXTMaybe validObjectWithMaybe:[EXTNil null] orElse:nil];
-    XCTAssertNil(obj, @"");
+    STAssertNil(obj, @"");
 }
 
 - (void)testValidObject {
     NSString *str = @"foobar";
     id obj = [EXTMaybe validObjectWithMaybe:str orElse:nil];
 
-    XCTAssertEqualObjects(obj, str, @"");
+    STAssertEqualObjects(obj, str, @"");
 }
 
 @end

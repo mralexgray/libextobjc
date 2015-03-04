@@ -11,7 +11,8 @@
 //@import Foundation;
 #import <Foundation/Foundation.h>
 
-#import <ffi/ffi.h>
+#import <ffi.h>
+#import <ffi_i386.h>
 //@import ObjectiveC;
 #import <Foundation/NSObjCRuntime.h>
 

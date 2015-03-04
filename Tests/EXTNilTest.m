@@ -15,21 +15,21 @@
     id obj = [EXTNil null];
 
     // irony
-    XCTAssertNotNil(obj, @"");
+    STAssertNotNil(obj, @"");
     
-    XCTAssertEqualObjects(obj, obj, @"EXTNil should equal itself");
-    XCTAssertEqual([obj init], obj, @"-init on EXTNil should return the same object without any change");
-    XCTAssertNil([obj alloc], @"+alloc on EXTNil instance should return nil");
+    STAssertEqualObjects(obj, obj, @"EXTNil should equal itself");
+    STAssertEquals([obj init], obj, @"-init on EXTNil should return the same object without any change");
+    STAssertNil([obj alloc], @"+alloc on EXTNil instance should return nil");
 
-    XCTAssertEqual([obj uppercaseString], (NSString *)nil, @"any method on EXTNil object should return zero value");
-    XCTAssertEqual((NSInteger)[obj length], (NSInteger)0, @"any method on EXTNil object should return zero value");
-    XCTAssertEqualWithAccuracy([obj doubleValue], 0.0, 0.01, @"any method on EXTNil object should return zero value");
-    XCTAssertTrue(NSEqualRanges([obj rangeOfString:@""], NSMakeRange(0, 0)), @"any method on EXTNil object should return zero value");
+    STAssertEquals([obj uppercaseString], (NSString *)nil, @"any method on EXTNil object should return zero value");
+    STAssertEquals((NSInteger)[obj length], (NSInteger)0, @"any method on EXTNil object should return zero value");
+    STAssertEqualsWithAccuracy([obj doubleValue], 0.0, 0.01, @"any method on EXTNil object should return zero value");
+    STAssertTrue(NSEqualRanges([obj rangeOfString:@""], NSMakeRange(0, 0)), @"any method on EXTNil object should return zero value");
 
     NSArray *arr = @[obj];
-    XCTAssertNotNil(arr, @"");
-    XCTAssertEqualObjects(arr[0], obj, @"EXTNil object properties should be preserved in a collection");
-    XCTAssertEqualObjects([arr[0] target], nil, @"EXTNil object properties should be preserved in a collection");
+    STAssertNotNil(arr, @"");
+    STAssertEqualObjects(arr[0], obj, @"EXTNil object properties should be preserved in a collection");
+    STAssertEqualObjects([arr[0] target], nil, @"EXTNil object properties should be preserved in a collection");
 }
 
 - (void)testKeyValueCoding {
@@ -37,7 +37,7 @@
     [obj setValue:@"foo" forKey:@"bar"];
 
     NSDictionary *values = [obj dictionaryWithValuesForKeys:@[@"bar"]];
-    XCTAssertNil(values, @"");
+    STAssertNil(values, @"");
 }
 
 @end

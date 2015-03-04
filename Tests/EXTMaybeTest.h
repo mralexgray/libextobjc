@@ -9,8 +9,8 @@
 
 //  Logic unit tests contain unit test code that is designed to be linked into an independent test executable.
 
-#import <XCTest/XCTest.h>
+#import <SenTestingKit/SenTestingKit.h>
 
-@interface EXTMaybeTest : XCTestCase
+@interface EXTMaybeTest : SenTestCase
 
 @end
