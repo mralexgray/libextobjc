@@ -494,7 +494,7 @@
 			name = "OS X Tests";
 			productName = "Logic Tests";
 			productReference = D0A8B2DC128A495D004AACE0 /* Logic Tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		D0CFB60E128A8EEE006DC377 /* iOS Tests */ = {
 			isa = PBXNativeTarget;
@@ -512,7 +512,7 @@
 			name = "iOS Tests";
 			productName = "iOS Tests";
 			productReference = D0CFB60F128A8EEE006DC377 /* iOS Tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		D2AAC07D0554694100DB518D /* libextobjc (OS X) */ = {
 			isa = PBXNativeTarget;
@@ -537,7 +537,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0610;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "extobjc" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -693,8 +693,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C4F146F99B900D680C9 /* Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
@@ -703,6 +704,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				TEST_AFTER_BUILD = YES;
 				WARNING_CFLAGS = "-fmacro-backtrace-limit=0";
 			};
@@ -712,8 +714,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C51146F99B900D680C9 /* Release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
@@ -731,7 +734,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C58146F99B900D680C9 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
 				HEADER_SEARCH_PATHS = "libffi/ios/include/**";
 				PRODUCT_NAME = extobjc_iOS;
@@ -742,7 +744,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C58146F99B900D680C9 /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PREFIX_HEADER = extobjc/extobjc_Prefix.pch;
 				HEADER_SEARCH_PATHS = "libffi/ios/include/**";
 				PRODUCT_NAME = extobjc_iOS;
@@ -807,7 +808,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C56146F99B900D680C9 /* iOS-Application.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -840,7 +840,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C56146F99B900D680C9 /* iOS-Application.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
